@@ -1,741 +1,519 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevFolio - My Portfolio</title>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Link to Separate CSS File -->
+    <title>Dhinesh Kumar K | Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Dhinesh Kumar Krishnamoorthy — Self-taught Full Stack Developer from Tamil Nadu building real-world web apps.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">Port<span>Folio</span></div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- ====== CURSOR ====== -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content fade-in-up">
-            <h1>I am <span style="color:var(--primary-color);">Dhinesh Kumar Krishnamoorthy</span></h1>
-            <!-- Typing Animation -->
-            <div class="typing-container">
-                Creative Designer & Fullstack Developer
+    <!-- ====== NAVBAR ====== -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">DK_</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#stack" class="nav-item">Stack</a>
+                <a href="#projects" class="nav-item">Work</a>
+                <a href="#contact" class="nav-item">Contact</a>
             </div>
-            <br><br>
-            <a href="#contact"><button class="btn" style="display:inline-block; width:auto;">Hire Me</button></a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== MOBILE MENU ====== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#stack" class="mobile-link">Stack</a>
+        <a href="#projects" class="mobile-link">Work</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="about.html" class="mobile-link">My Story</a>
+    </div>
+
+    <!-- ====== HERO ====== -->
+    <section id="hero" class="hero">
+        <div class="hero-inner">
+            <div class="hero-label">— Full Stack Developer</div>
+            <h1 class="hero-name">
+                <span class="line">DHINESH</span>
+                <span class="line">KUMAR<span class="hero-dot">.</span></span>
+            </h1>
+            <div class="hero-sub-row">
+                <div class="hero-desc">
+                    <p>Self-taught developer from Tamil Nadu. Building real-world web applications with HTML, CSS,
+                        JavaScript & Python. A beginner with an unbreakable story.</p>
+                    <div class="hero-status">
+                        <span class="status-dot"></span>
+                        <span>Available for work</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-main">View Work</a>
+                    <a href="about.html" class="btn-outline">My Story →</a>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-lbl">Projects</div>
+                </div>
+                <div class="stat-sep">/</div>
+                <div class="stat-box">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-lbl">Awards</div>
+                </div>
+                <div class="stat-sep">/</div>
+                <div class="stat-box">
+                    <div class="stat-num">2</div>
+                    <div class="stat-lbl">Yrs Hustle</div>
+                </div>
+                <div class="stat-sep">/</div>
+                <div class="stat-box">
+                    <div class="stat-num">∞</div>
+                    <div class="stat-lbl">Dedication</div>
+                </div>
+            </div>
+
+            <div class="scroll-hint">SCROLL ↓</div>
+        </div>
+        <div class="hero-img-col">
+            <div class="hero-photo-wrap">
+                <img src="../img/Gemini_Generated_Image_ebvay7ebvay7ebva.png" alt="Dhinesh Kumar" class="hero-photo">
+                <div class="hero-photo-label">K_Dhinesh_Kumar</div>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ====== MARQUEE ====== -->
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <span><i class="fab fa-html5"></i> HTML5</span><span>•</span>
+            <span><i class="fab fa-css3-alt"></i> CSS3</span><span>•</span>
+            <span><i class="fab fa-js"></i> JAVASCRIPT</span><span>•</span>
+            <span><i class="fab fa-react"></i> REACT</span><span>•</span>
+            <span><i class="fas fa-wind"></i> TAILWIND</span><span>•</span>
+            <span><i class="fab fa-python"></i> PYTHON</span><span>•</span>
+            <span><i class="fas fa-bolt"></i> FASTAPI</span><span>•</span>
+            <span><i class="fas fa-database"></i> POSTGRESQL</span><span>•</span>
+            <span><i class="fab fa-figma"></i> FIGMA</span><span>•</span>
+
+            <span><i class="fab fa-github"></i> GITHUB</span><span>•</span>
+            <!-- Repeat for seamless loop -->
+            <span><i class="fab fa-html5"></i> HTML5</span><span>•</span>
+            <span><i class="fab fa-css3-alt"></i> CSS3</span><span>•</span>
+            <span><i class="fab fa-js"></i> JAVASCRIPT</span><span>•</span>
+            <span><i class="fab fa-react"></i> REACT</span><span>•</span>
+            <span><i class="fas fa-wind"></i> TAILWIND</span><span>•</span>
+            <span><i class="fab fa-python"></i> PYTHON</span><span>•</span>
+            <span><i class="fas fa-bolt"></i> FASTAPI</span><span>•</span>
+            <span><i class="fas fa-database"></i> POSTGRESQL</span><span>•</span>
+            <span><i class="fab fa-figma"></i> FIGMA</span><span>•</span>
+
+            <span><i class="fab fa-github"></i> GITHUB</span><span>•</span>
+        </div>
+    </div>
+
+    <!-- ====== ABOUT ====== -->
     <section id="about" class="section">
-        <div class="title-box">
-            <h2>About Me</h2>
-            <p>Passionate Developer | Creative Problem Solver</p>
-        </div>
-        <div class="about-content">
-            <div class="about-img">
-                <!-- Social Badge on Image -->
-                <div class="image-social-badge">
-                    <div class="badge-item">
-                        <i class="fas fa-star"></i>
-                        <span>Dev Enthusiast</span>
-                    </div>
+        <div class="section-inner">
+            <div class="section-label">[ 01 ] ABOUT</div>
+            <div class="about-grid">
+                <div class="about-left">
+                    <h2 class="big-heading">ABOUT<br>ME.</h2>
                 </div>
-
-                <img src="./img/Gemini_Generated_Image_ebvay7ebvay7ebva.png" alt="Profile">
-
-                <!-- Follow Below Image -->
-                <div class="follow-below">
-                    <p>Follow Me</p>
-                    <div class="follow-icons">
-                        <a href="https://www.facebook.com/dhinesh.kumar.7549" title="Facebook"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/it_is_me_blackey_boy_/" title="Instagram"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/dhinesh-kumar-k-260932394/" title="LinkedIn"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/Kdhinesh420" title="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="about-text">
-                <h3>Hello! I'm a <span class="highlight-text">Full Stack Developer</span></h3>
-                <p class="intro-text">I am a passionate Full Stack Developer with a strong interest in web development
-                    and modern technologies. As a fresher with 1+ year of hands-on experience, I am highly enthusiastic
-                    about learning new frameworks and continuously improving my skills.</p>
-
-                <div class="about-highlights">
-                    <div class="highlight-item">
-                        <i class="fas fa-code"></i>
-                        <div class="highlight-content">
-                            <h4>Clean Code</h4>
-                            <p>Writing maintainable, scalable code following best practices</p>
+                <div class="about-right">
+                    <p class="about-body">
+                        I'm <strong>Dhinesh Kumar Krishnamoorthy</strong> — a dedicated Full Stack Developer from
+                        Thanjavur, Tamil Nadu. I specialize in building robust and scalable web applications using
+                        modern technologies. My journey in tech is driven by a passion for solving real-world challenges
+                        through clean and efficient code.
+                    </p>
+                    <p class="about-body">
+                        I specialise in building responsive, fast web applications using HTML, CSS, JavaScript and
+                        Python (FastAPI). I believe in writing clean code that solves real problems. Every line I write
+                        carries the weight of my journey.
+                    </p>
+                    <div class="about-actions-row">
+                        <a href="about.html" class="btn-main" id="full-story-btn">Read Full Story ↗</a>
+                        <div class="contacts-inline">
+                            <a href="mailto:kkdhinesh2@gmail.com">kkdhinesh2@gmail.com</a>
+                            <span>•</span>
+                            <a href="https://github.com/Kdhinesh420" target="_blank">GitHub</a>
+                            <span>•</span>
+                            <a href="https://www.linkedin.com/in/dhinesh-kumar-k-260932394/"
+                                target="_blank">LinkedIn</a>
                         </div>
                     </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-mobile-alt"></i>
-                        <div class="highlight-content">
-                            <h4>Responsive Design</h4>
-                            <p>Creating user-friendly interfaces that work on all devices</p>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-lightbulb"></i>
-                        <div class="highlight-content">
-                            <h4>Problem Solving</h4>
-                            <p>Analyzing challenges and delivering efficient solutions</p>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-rocket"></i>
-                        <div class="highlight-content">
-                            <h4>Performance Focus</h4>
-                            <p>Optimizing applications for speed and user experience</p>
-                        </div>
-                    </div>
-                </div>
 
-                <p class="closing-text">I specialize in building full-stack web applications using modern technologies
-                    like Html, Css, JavaScript, and Python. My projects showcase my technical skills, attention to
-                    detail, and dedication to delivering quality work that makes a real impact.</p>
-
-                <div class="about-cta">
-                    <a href="#portfolio" class="btn-primary">View My Work</a>
-                    <a href="#contact" class="btn-secondary">Get In Touch</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services / Skills Section -->
-    <section id="services" class="section" style="background:var(--bg-color);">
-        <div class="title-box">
-            <h2>My Skills</h2>
-            <p>What I Provide & My Expertise</p>
-        </div>
-
-        <div class="skills-grid">
-            <!-- HTML5 -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>HTML5</h3>
-                        <span class="skill-percentage">95%</span>
+    <!-- ====== STACK / SKILLS ====== -->
+    <section id="stack" class="section section-dark">
+        <div class="section-inner">
+            <div class="section-label">[ 02 ] STACK</div>
+            <h2 class="big-heading">Technologies_<br>I've worked with</h2>
+            <div class="stack-grid">
+                <div class="stack-item" data-tech="HTML5">
+                    <div class="stack-icon"><i class="fab fa-html5"></i></div>
+                    <div class="stack-name">HTML5</div>
+                    <div class="stack-level">95%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:95%"></div>
                     </div>
                 </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:95%"></div>
+                <div class="stack-item" data-tech="CSS3">
+                    <div class="stack-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="stack-name">CSS3</div>
+                    <div class="stack-level">90%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:90%"></div>
+                    </div>
+                </div>
+                <div class="stack-item" data-tech="JavaScript">
+                    <div class="stack-icon"><i class="fab fa-js"></i></div>
+                    <div class="stack-name">JavaScript</div>
+                    <div class="stack-level">80%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:80%"></div>
+                    </div>
+                </div>
+                <div class="stack-item" data-tech="Python">
+                    <div class="stack-icon"><i class="fab fa-python"></i></div>
+                    <div class="stack-name">Python</div>
+                    <div class="stack-level">75%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:75%"></div>
+                    </div>
+                </div>
+                <div class="stack-item" data-tech="FastAPI">
+                    <div class="stack-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="stack-name">FastAPI</div>
+                    <div class="stack-level">70%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class="stack-item" data-tech="PostgreSQL">
+                    <div class="stack-icon"><i class="fas fa-database"></i></div>
+                    <div class="stack-name">PostgreSQL</div>
+                    <div class="stack-level">70%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class="stack-item" data-tech="React">
+                    <div class="stack-icon"><i class="fab fa-react"></i></div>
+                    <div class="stack-name">React</div>
+                    <div class="stack-level">50%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class="stack-item" data-tech="Tailwind">
+                    <div class="stack-icon"><i class="fas fa-wind"></i></div>
+                    <div class="stack-name">Tailwind CSS</div>
+                    <div class="stack-level">55%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="stack-item" data-tech="Figma">
+                    <div class="stack-icon"><i class="fab fa-figma"></i></div>
+                    <div class="stack-name">Figma</div>
+                    <div class="stack-level">85%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="stack-item" data-tech="Git">
+                    <div class="stack-icon"><i class="fab fa-github-alt"></i></div>
+                    <div class="stack-name">GitHub</div>
+                    <div class="stack-level">80%</div>
+                    <div class="stack-bar">
+                        <div class="stack-fill" style="width:80%"></div>
+                    </div>
                 </div>
             </div>
-
-            <!-- CSS3 -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>CSS3</h3>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:90%"></div>
-                </div>
-            </div>
-
-            <!-- JavaScript -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>JavaScript</h3>
-                        <span class="skill-percentage">85%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:85%"></div>
-                </div>
-            </div>
-
-
-
-            <!-- Python -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Python</h3>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:80%"></div>
-                </div>
-            </div>
-
-            <!-- PostgreSQL -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>PostgreSQL</h3>
-                        <span class="skill-percentage">75%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:75%"></div>
-                </div>
-            </div>
-
-
-
-            <!-- Figma -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fab fa-figma"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Figma</h3>
-                        <span class="skill-percentage">90%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:90%"></div>
-                </div>
-            </div>
-
-            <!-- Presentation -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Presentation</h3>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:80%"></div>
-                </div>
-            </div>
-
-            <!-- Communication -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Communication</h3>
-                        <span class="skill-percentage">85%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:85%"></div>
-                </div>
-            </div>
-
-            <!-- Reading -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fas fa-book-reader"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Reading</h3>
-                        <span class="skill-percentage">85%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:85%"></div>
-                </div>
-            </div>
-
-            <!-- Listening -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fas fa-headphones"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Listening</h3>
-                        <span class="skill-percentage">80%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:80%"></div>
-                </div>
-            </div>
-
-            <!-- Writing -->
-            <div class="skill-card">
-                <div class="skill-header">
-                    <div class="skill-icon">
-                        <i class="fas fa-pen-fancy"></i>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Writing</h3>
-                        <span class="skill-percentage">85%</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="--w:85%"></div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- Experience Section (Counter Style) -->
-    <section id="experience" class="counter-section">
-        <div class="counter-container">
-
-
-            <!-- Item 2: Projects -->
-            <div class="counter-item">
-                <div class="counter-icon">
-                    <i class="fas fa-check"></i>
-                </div>
-                <span class="counter-num">3+</span>
-                <span class="counter-text">COMPLETED PROJECTS</span>
-            </div>
-
-
-
-            <!-- Item 4: Awards -->
-            <div class="counter-item">
-                <div class="counter-icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <span class="counter-num">3+</span>
-                <span class="counter-text">AWARDS WON</span>
-            </div>
-
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section" style="background:#fff;">
-        <div class="title-box">
-            <h2>Portfolio</h2>
-            <p>My Recent Works</p>
-        </div>
-        <div class="portfolio-grid">
+    <!-- ====== PROJECTS ====== -->
+    <section id="projects" class="section">
+        <div class="section-inner">
+            <div class="section-label">[ 03 ] SELECTED_WORKS</div>
+            <h2 class="big-heading">Projects_</h2>
+
             <!-- Project 1 -->
-            <div class="portfolio-item">
-                <img src="./img/Screenshot 2026-01-05 010445.png" alt="Work 1" height="85%">
-                <div class="overlay">
-                    <h3>Project One</h3>
-                    <p>TAMILNADU_TOURISM</p>
-                    <div class="portfolio-links">
-                        <a href="https://github.com/Kdhinesh420/TAMILNADU_TOURISM.git" title="GitHub"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://kdhinesh420.github.io/TAMILNADU_TOURISM/" title="View Project"><i
-                                class="fas fa-external-link-alt"></i></a>
+            <div class="project-row" id="proj-1">
+                <div class="proj-num">01</div>
+                <div class="proj-content">
+                    <div class="proj-header">
+                        <div class="proj-title-group">
+                            <h3 class="proj-name">TAMILNADU_TOURISM</h3>
+                            <div class="proj-tags">
+                                <span>HTML</span><span>CSS</span>
+                            </div>
+                        </div>
+                        <div class="proj-links-row">
+                            <a href="https://github.com/Kdhinesh420/TAMILNADU_TOURISM.git" target="_blank"
+                                class="proj-link-btn">GitHub ↗</a>
+                            <a href="https://kdhinesh420.github.io/TAMILNADU_TOURISM/" target="_blank"
+                                class="proj-link-btn">Live ↗</a>
+                        </div>
+                    </div>
+                    <p class="proj-desc">A beautiful, fully responsive tourism website showcasing Tamil Nadu's rich
+                        heritage, temples, beaches, and culture. Built with clean HTML/CSS with smooth navigation and
+                        stunning visuals.</p>
+                    <div class="proj-img-wrap">
+                        <img src="../img/Screenshot 2026-02-22 215607.png" alt="Tamil Nadu Tourism" class="proj-img"
+                            loading="lazy">
                     </div>
                 </div>
             </div>
+
+            <div class="proj-divider"></div>
+
             <!-- Project 2 -->
-            <div class="portfolio-item">
-                <img src="./img/Screenshot 2025-11-11 200319.png" alt="Work 2">
-                <div class="overlay">
-                    <h3>Project Two</h3>
-                    <p>ULAVAN_PLANET</p>
-                    <div class="portfolio-links">
-                        <a href="https://github.com/Kdhinesh420/ULAVAN_PLANET.git" title="GitHub"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://kdhinesh420.github.io/ULAVAN_PLANET/" title="View Project"><i
-                                class="fas fa-external-link-alt"></i></a>
+            <div class="project-row" id="proj-2">
+                <div class="proj-num">02</div>
+                <div class="proj-content">
+                    <div class="proj-header">
+                        <div class="proj-title-group">
+                            <h3 class="proj-name">ULAVAN_PLANET</h3>
+                            <div class="proj-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div class="proj-links-row">
+                            <a href="https://github.com/Kdhinesh420/ULAVAN_PLANET.git" target="_blank"
+                                class="proj-link-btn">GitHub ↗</a>
+                            <a href="https://kdhinesh420.github.io/ULAVAN_PLANET/" target="_blank"
+                                class="proj-link-btn">Live ↗</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="portfolio-item">
-                <img src="./img/file_0000000020bc61f885ea202bb5256945 (1) (2).png" alt="Work 3">
-                <div class="overlay">
-                    <h3>Project Three</h3>
-                    <p>Product Building Challenge</p>
-                    <div class="portfolio-links">
-                        <a href="#" onclick="openProjectModal(); return false;" title="Read More">
-                            <i class="fas fa-book-open"></i>
-                        </a>
-                        <a href="#" onclick="openGalleryModal(); return false;" title="View Gallery">
-                            <i class="fas fa-images"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                    alt="Work 4">
-                <div class="overlay">
-                    <h3>Project Four</h3>
-                    <p>Marketing</p>
-                    <div class="portfolio-links">
-                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                    alt="Work 5">
-                <div class="overlay">
-                    <h3>Project Five</h3>
-                    <p>Design</p>
-                    <div class="portfolio-links">
-                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 6 -->
-            <div class="portfolio-item">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                    alt="Work 6">
-                <div class="overlay">
-                    <h3>Project Six</h3>
-                    <p>Development</p>
-                    <div class="portfolio-links">
-                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+                    <p class="proj-desc">Full-stack organic farming e-commerce platform connecting farmers directly to
+                        consumers. Features product listings, cart, seller & buyer dashboards, authentication, and order
+                        management.</p>
+                    <div class="proj-img-wrap">
+                        <img src="../img/Screenshot 2026-02-22 215303.png" alt="Ulavan Planet" class="proj-img"
+                            loading="lazy">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="title-box">
-            <h2>Contact Me</h2>
-            <p>Let's Work Together</p>
-        </div>
-        <div class="contact-content">
-
-            <!-- Left Side: Contact Info -->
-            <div class="contact-info">
-                <h3 style="margin-bottom: 20px; font-size: 1.5rem; color:var(--primary-color);">Get in Touch</h3>
-                <p style="margin-bottom: 30px;">
-                    Feel free to contact me for any project or collaboration. I am available for freelance work.
-                </p>
-
-                <!-- Address Item -->
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+    <!-- ====== WHY CHOOSE ME ====== -->
+    <section id="why" class="section section-dark">
+        <div class="section-inner">
+            <div class="section-label">[ 04 ] WHY_CHOOSE_ME</div>
+            <h2 class="big-heading">Why Work<br>With Me?</h2>
+            <div class="why-list">
+                <div class="why-row">
+                    <div class="why-num">01</div>
+                    <div class="why-body">
+                        <h3>Passion-Driven Work</h3>
+                        <p>I code with purpose. My story makes me fight harder than anyone for every project.</p>
                     </div>
-                    <div class="contact-text">
-                        <h3>Address</h3>
-                        <p>1/171, Kaliyaman Temple Street,
-                            Sathiyamangalam.
-                            Papanasam -TK,
-                            Dhanjavur - dt , Tamilnadu-India.
-                        </p>
+                </div>
+                <div class="why-row">
+                    <div class="why-num">02</div>
+                    <div class="why-body">
+                        <h3>Full Stack Delivery</h3>
+                        <p>Frontend, backend, database — I deliver complete, working solutions end-to-end.</p>
+                    </div>
+                </div>
+                <div class="why-row">
+                    <div class="why-num">03</div>
+                    <div class="why-body">
+                        <h3>Fast Learner</h3>
+                        <p>Self-taught from scratch. I adapt quickly to any new technology or requirement.</p>
                     </div>
                 </div>
 
-                <!-- Email Item -->
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
+                <div class="why-row">
+                    <div class="why-num">05</div>
+                    <div class="why-body">
+                        <h3>Clear Communication</h3>
+                        <p>Transparent, honest, and collaborative. I work with you, not just for you.</p>
                     </div>
-                    <div class="contact-text">
-                        <h3>Email</h3>
-                        <p>kkdhinesh2@gmail.com</p>
-                    </div>
-                </div>
-
-                <!-- Social Media Links -->
-                <h3 class="social-title">Follow Me</h3>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/dhinesh.kumar.7549" title="Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/it_is_me_blackey_boy_/" title="Instagram"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/dhinesh-kumar-k-260932394/" title="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Kdhinesh420" title="GitHub"><i class="fab fa-github"></i></a>
-                </div>
-
-                <!-- Decorative Divider -->
-                <div class="contact-divider"></div>
-
-                <!-- Let's Connect CTA -->
-                <div class="connect-cta">
-                    <h4>Let's Create Something Amazing!</h4>
-                    <p>Ready to collaborate on your next project?</p>
-                    <a href="#contact" class="cta-button">Get Started Now</a>
                 </div>
             </div>
-
-            <!-- Right Side: Contact Form -->
-            <div class="contact-form">
-                <div class="why-choose-section">
-                    <h3 class="why-choose-title">Why Choose Me?</h3>
-                    <ul class="why-choose-list">
-                        <li class="why-choose-item">
-                            <div class="why-choose-icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <div class="why-choose-text">
-                                <p>Skilled Full Stack Developer in Fast Api, PostgreSQL, and JavaScript.</p>
-                            </div>
-                        </li>
-                        <li class="why-choose-item">
-                            <div class="why-choose-icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <div class="why-choose-text">
-                                <p>Crafts responsive, user-focused web applications with performance optimization.</p>
-                            </div>
-                        </li>
-                        <li class="why-choose-item">
-                            <div class="why-choose-icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <div class="why-choose-text">
-                                <p>Creative thinker driving dynamic, efficient solutions for real-world challenges.</p>
-                            </div>
-                        </li>
-                        <li class="why-choose-item">
-                            <div class="why-choose-icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <div class="why-choose-text">
-                                <p>Collaborative approach with clear communication.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3 class="footer-title">Port<span>Folio</span></h3>
-                <p class="footer-desc">Crafting beautiful, responsive web experiences with modern technologies.</p>
-            </div>
 
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/dhinesh.kumar.7549" title="Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/it_is_me_blackey_boy_/" title="Instagram"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/dhinesh-kumar-k-260932394/" title="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Kdhinesh420" title="GitHub"><i class="fab fa-github"></i></a>
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="section section-dark">
+        <div class="section-inner">
+            <div class="section-label">[ 05 ] CONTACT</div>
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <h2 class="big-heading">LET'S<br>CONNECT.</h2>
+                    <p class="contact-sub">Available for freelance work and collaborations. Drop a message.</p>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-links-list">
+                        <a href="mailto:kkdhinesh2@gmail.com" class="contact-link-row">
+                            <span class="cl-label"><i class="fas fa-envelope"></i> EMAIL_</span>
+                            <span class="cl-value">kkdhinesh2@gmail.com ↗</span>
+                        </a>
+                        <a href="https://github.com/Kdhinesh420" target="_blank" class="contact-link-row">
+                            <span class="cl-label"><i class="fab fa-github"></i> GITHUB_</span>
+                            <span class="cl-value">github.com/Kdhinesh420 ↗</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dhinesh-kumar-k-260932394/" target="_blank"
+                            class="contact-link-row">
+                            <span class="cl-label"><i class="fab fa-linkedin"></i> LINKEDIN_</span>
+                            <span class="cl-value">dhinesh-kumar-k ↗</span>
+                        </a>
+                        <a href="https://www.instagram.com/it_is_me_blackey_boy_/" target="_blank"
+                            class="contact-link-row">
+                            <span class="cl-label"><i class="fab fa-instagram"></i> INSTAGRAM_</span>
+                            <span class="cl-value">@it_is_me_blackey_boy_ ↗</span>
+                        </a>
+                        <a href="https://www.facebook.com/dhinesh.kumar.7549" target="_blank" class="contact-link-row">
+                            <span class="cl-label"><i class="fab fa-facebook"></i> FACEBOOK_</span>
+                            <span class="cl-value">dhinesh.kumar.7549 ↗</span>
+                        </a>
+                    </div>
+                    <a href="about.html" class="btn-main" style="display:inline-block;margin-top:32px;">Read My Full
+                        Story ↗</a>
                 </div>
             </div>
         </div>
+    </section>
 
-
-
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-logo">DK_</span>
+            <span class="footer-copy">© 2026 DHINESH_KUMAR_K — Built with HTML / CSS / JS</span>
+            <div class="footer-socials">
+                <a href="https://github.com/Kdhinesh420" target="_blank" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dhinesh-kumar-k-260932394/" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/it_is_me_blackey_boy_/" target="_blank" title="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Project Modal -->
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeProjectModal()">&times;</span>
-
-            <article class="project-article">
-                <header class="article-header">
-                    <h1>Product Building Challenge</h1>
-                    <div class="article-meta">
-                        <span><i class="fas fa-calendar-alt"></i> Academy Event</span>
-                        <span><i class="fas fa-users"></i> Team Project</span>
-                        <span><i class="fas fa-trophy"></i> Special Mention</span>
-                    </div>
-                </header>
-
-                <div class="article-content">
-                    <section class="intro-section">
-                        <h2>Project Overview</h2>
-                        <p>This was an exciting product building challenge organized by our academy, where creative
-                            minds came together to design and build innovative products. Our team participated
-                            enthusiastically and created something truly unique.</p>
-                    </section>
-
-                    <section class="project-details">
-                        <h2>What We Built</h2>
-                        <p>Our team collaborated to create an <strong>Air Conditioner (AC) model</strong> using silver
-                            foil as the primary material. The design process involved careful planning, creative
-                            thinking, and teamwork to bring our vision to life.</p>
-
-                        <div class="highlight-box">
-                            <i class="fas fa-lightbulb"></i>
-                            <p>We used innovative techniques with silver foil to create a realistic AC model that
-                                showcased both functionality and aesthetics.</p>
-                        </div>
-                    </section>
-
-                    <section class="team-section">
-                        <h2>Team Information</h2>
-                        <p>Our team name was <strong>"Seven Star Creators"</strong>, representing the six talented
-                            individuals who worked together on this project. Each member contributed their unique skills
-                            and creativity to make this project successful.</p>
-
-                        <div class="team-highlight">
-                            <i class="fas fa-star"></i>
-                            <h3>Team: Seven Star Creators</h3>
-                            <p>A group of passionate innovators working together to create excellence</p>
-                        </div>
-                    </section>
-
-                    <section class="achievement-section">
-                        <h2>Achievement</h2>
-                        <p>I am proud to share that I received a <strong>Special Mention</strong> for my contributions
-                            to this project. This recognition motivated me to continue pursuing creative and technical
-                            challenges.</p>
-
-                        <div class="award-badge">
-                            <i class="fas fa-award"></i>
-                            <h3>Special Mention Award</h3>
-                            <p>Recognized for outstanding contribution and creativity</p>
-                        </div>
-                    </section>
-
-                    <section class="gallery-section">
-                        <h2>Project Gallery</h2>
-                        <div class="project-gallery">
-                            <div class="gallery-item">
-                                <img src="./img/file_0000000020bc61f885ea202bb5256945 (1) (2).png"
-                                    alt="Project Image 1">
-                                <p class="image-caption">Our AC Model Design</p>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="./img/IMG-20250828-WA0007.jpg"
-                                    alt="Project Image 2">
-                                <p class="image-caption">Team Working Together</p>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="./img/IMG_20250826_220837 (1).jpg"
-                                    alt="Project Image 3">
-                                <p class="image-caption">Final Product</p>
-                            </div>
-                            <div class="gallery-item">
-                                <img src="./img/file_0000000020bc61f885ea202bb5256945 (1) (2).png"
-                                    alt="Project Image 4">
-                                <p class="image-caption">Award Ceremony</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="conclusion-section">
-                        <h2>Lessons Learned</h2>
-                        <p>This challenge taught me the importance of teamwork, creative problem-solving, and thinking
-                            outside the box.</p>
-                    </section>
-                </div>
-            </article>
-        </div>
-    </div>
-
-    <!-- Gallery Modal (Photos Only) -->
-    <div id="galleryModal" class="modal">
-        <div class="modal-content gallery-modal-content">
-            <span class="close-modal" onclick="closeGalleryModal()">&times;</span>
-            <div class="gallery-pure">
-                <h2>Project Gallery</h2>
-                <div class="project-gallery">
-                    <div class="gallery-item">
-                        <img src="./img/file_0000000020bc61f885ea202bb5256945 (1) (2).png" alt="Gallery Photo 1">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./img/file_0000000020bc61f885ea202bb5256945 (1) (2).png" alt="Gallery Photo 2">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./img/file_0000000020bc61f885ea202bb5256945 (1) (2).png" alt="Gallery Photo 3">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./img/file_0000000020bc61f885ea202bb5256945 (1) (2).png" alt="Gallery Photo 4">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
-        function openProjectModal() {
-            document.getElementById('projectModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
+        // Custom cursor
+        var cursor = document.getElementById('cursor');
+        var follower = document.getElementById('cursorFollower');
+        var mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
 
-        function closeProjectModal() {
-            document.getElementById('projectModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
+        document.addEventListener('mousemove', function (e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.left = mouseX + 'px';
+            cursor.style.top = mouseY + 'px';
+        });
 
-        function openGalleryModal() {
-            document.getElementById('galleryModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
+        function animateFollower() {
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            follower.style.left = followerX + 'px';
+            follower.style.top = followerY + 'px';
+            requestAnimationFrame(animateFollower);
         }
+        animateFollower();
 
-        function closeGalleryModal() {
-            document.getElementById('galleryModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
+        document.querySelectorAll('a, button, .stack-item, .project-row').forEach(function (el) {
+            el.addEventListener('mouseenter', function () {
+                cursor.classList.add('cursor-hover');
+                follower.classList.add('cursor-hover');
+            });
+            el.addEventListener('mouseleave', function () {
+                cursor.classList.remove('cursor-hover');
+                follower.classList.remove('cursor-hover');
+            });
+        });
 
-        // Close modal when clicking outside
-        window.onclick = function (event) {
-            const projectModal = document.getElementById('projectModal');
-            const galleryModal = document.getElementById('galleryModal');
-            if (event.target == projectModal) {
-                closeProjectModal();
-            }
-            if (event.target == galleryModal) {
-                closeGalleryModal();
-            }
-        }
+        // Nav scroll
+        var nav = document.getElementById('nav');
+        window.addEventListener('scroll', function () {
+            nav.classList.toggle('nav-scrolled', window.scrollY > 40);
+        });
+
+        // Hamburger
+        var hamburger = document.getElementById('hamburger');
+        var mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', function () {
+            mobileMenu.classList.toggle('open');
+            hamburger.classList.toggle('open');
+        });
+        document.querySelectorAll('.mobile-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                mobileMenu.classList.remove('open');
+                hamburger.classList.remove('open');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+            a.addEventListener('click', function (e) {
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    mobileMenu.classList.remove('open');
+                    hamburger.classList.remove('open');
+                }
+            });
+        });
+
+        // Scroll reveal
+        var revealEls = document.querySelectorAll('.project-row, .stack-item, .why-row, .about-grid, .contact-grid');
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, { threshold: 0.05 });
+        revealEls.forEach(function (el) { io.observe(el); });
+
+        // Stack bar animation
+        var stackIo = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    var fill = entry.target.querySelector('.stack-fill');
+                    if (fill) {
+                        fill.style.width = fill.getAttribute('style').replace('width:', '').trim();
+                        entry.target.classList.add('animated');
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.stack-item').forEach(function (el) { stackIo.observe(el); });
+
+
     </script>
-
 </body>
 
 </html>
