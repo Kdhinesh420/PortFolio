@@ -939,14 +939,14 @@ button {
 
 .why-num {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: var(--gray);
     letter-spacing: 2px;
     padding-top: 4px;
 }
 
 .why-body h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--white);
     margin-bottom: 8px;
@@ -956,7 +956,7 @@ button {
 }
 
 .why-body p {
-    font-size: 0.88rem;
+    font-size: 1.15rem;
     color: var(--gray-light);
     line-height: 1.7;
 }
