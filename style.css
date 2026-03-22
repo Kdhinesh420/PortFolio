@@ -1,8 +1,4 @@
-/* =====================================================
-   PORTFOLIO — BRUTALIST / EDITORIAL STYLE
-   Inspired by arif.zone.id
-   Black, White, Sharp — Premium Minimal
-   ===================================================== */
+
 
 /* ---------- VARIABLES ---------- */
 :root {
@@ -134,7 +130,7 @@ button {
 
 .nav-inner {
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 20px 40px;
     display: flex;
     align-items: center;
@@ -447,7 +443,7 @@ button {
     object-fit: cover;
     object-position: top;
     display: block;
-    filter: grayscale(20%);
+    
     transition: filter 0.4s;
 }
 
